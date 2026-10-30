@@ -1,6 +1,0 @@
-import{j as n}from"./jsx-runtime.D_zvdyIk.js";import{r as i}from"./index.Cgpa1h6a.js";import{B as c}from"./button.Dj73CAzN.js";import{c as l}from"./createLucideIcon.DeopSua0.js";import"./index.C1LUKKN2.js";/**
- * @license lucide-react v0.462.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const p=l("ArrowUp",[["path",{d:"m5 12 7-7 7 7",key:"hav0vg"}],["path",{d:"M12 19V5",key:"x0mq9r"}]]),m=400,d=600;function u(o){return 1-Math.pow(1-o,3)}function w(){const o=window.scrollY,r=performance.now();function t(s){const a=s-r,e=Math.min(a/d,1);window.scrollTo({top:o*(1-u(e)),behavior:"instant"}),e<1&&requestAnimationFrame(t)}requestAnimationFrame(t)}function y(){const[o,r]=i.useState(!1);return i.useEffect(()=>{const t=()=>r(window.scrollY>m);return window.addEventListener("scroll",t,{passive:!0}),()=>window.removeEventListener("scroll",t)},[]),n.jsx(c,{variant:"outline",size:"icon","aria-label":"Scroll to top",onClick:w,className:["fixed bottom-6 right-6 z-50 h-12 w-12 rounded-xl border-2 shadow-xl ring-1 ring-black/5 dark:ring-white/10 transition-all duration-300 hover:border-primary/60 hover:text-primary",o?"translate-y-0 opacity-100":"pointer-events-none translate-y-4 opacity-0"].join(" "),children:n.jsx(p,{className:"h-5 w-5"})})}export{y as default};
